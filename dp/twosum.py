@@ -5,12 +5,17 @@ def twosum(arr,target):
         for j in range(i,len(arr)):
             if arr[j]==target-arr[i]:
                 return [i, j]
+    return -1
 def twosum_1(arr,target):
     hash_map={}
     for i,x in enumerate(arr):
         if target-x in hash_map:
             return [i,hash_map[target-x]]
         hash_map[x]=i
+
+    return -1
+
+
 
 
 
