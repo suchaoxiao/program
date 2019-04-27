@@ -9,7 +9,7 @@ s2 = sys.stdin.readline().strip()
 # 相比于最长公共子序列，只不过是转移方程不同
 # dpij仍然表示前缀i和前缀j的最长连续公共子串长度
 
-dp = [[0 for j in range(len(s2))] for i in range(len(s1))]
+dp = [[0 for j in range(len(s1))] for i in range(len(s2))]
 def get_dp(i, j):
     if i < 0 or j < 0:
         return 0
